@@ -1,12 +1,10 @@
 import "./globals.css";
+import { Albert_Sans } from "next/font/google";
 
-/**
- * Challenge: Add the header to the project
- *
- * Hint: for the printforge logo(s), use a string src on the `<img />`:
- * src="/printforge-logo.svg" (Desktop logo)
- * src="/printforge-logo-icon.svg" (Mobile logo)
- */
+const albertSans = Albert_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function RootLayout({
   children,
@@ -15,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className={albertSans.className}>
         <header className="w-full bg-white">
           <nav className="flex justify-between px-6 py-4">
             <div className="relative">
