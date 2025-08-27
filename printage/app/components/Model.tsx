@@ -1,5 +1,5 @@
 import Link from "next/link";
-//import { FaRegHeart } from "react-icons/fa6";
+import { FaRegHeart } from "react-icons/fa6";
 import Pill from "./Pill";
 import { ModelCardProps } from "@/app/types";
 import placeholderImg from "@/public/placeholder.png";
@@ -41,10 +41,10 @@ export default function ModelCard({ model }: ModelCardProps) {
             className="flex items-center mt-2 text-gray-600"
             aria-label={`${model.likes} likes`}
           >
-            {/* <FaRegHeart
+            <FaRegHeart
               className="w-5 h-5 mr-1 text-gray-400"
               aria-hidden="true"
-            /> */}
+            />
             <span>{model.likes}</span>
           </div>
         </div>
